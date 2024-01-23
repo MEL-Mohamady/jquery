@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+ul {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   display: block;
+   width: 100%;
+}
+
+
+
+/* Home */
+
+#home {
+   & {
+      width: 100%;
+      height: 660px;
+      background-image: url(../images/people-having-fun-wedding-hall.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      color: white;
+      position: relative;
+   }
+   .layer {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6)
+   }
+   .nav-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 0px;
+      z-index: 99999;
+      overflow-x: hidden;
+   }
+   .menu {
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      font-size: 30px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+   transition:color,1s ;
+   }
+   .menu:hover{
+      scale: 1.4;
+   }
+   .menu span{
+      color: gray;
+   }
+   .nav-menu a:hover {
+      color: rgba(164, 10, 10, 0.9);
+      transition: 0.5s;
+   }
+   .nav-menu i {
+      position: absolute;
+      right: 40px;
+   }
+}
+/* slider */
+#slider {
+  
+   & {
+      margin: 100px auto;
+      width: 50%;
+      background-color:black;
+   }
+   p {
+      background-color: #000000;
+      padding: 10px 0;
+      color: yellow;
+      display: none;
+   }
+   h2 {
+      padding: 10px;
+   }
+}
+#slider h2:hover{
+   color: crimson;
+   
+
+}
+/* ### count  */
+#count {
+   & {
+      background-image: url(../images/pexels-rakicevic-nenad-769525.jpg);
+      
+      
+      background-size: 100% 100%;
+      position: relative;
+      min-height: 330px;
+   }
+   @media (max-width: 992px) {
+      & {
+         min-height: 700px;
+      }
+   }
+   .layer {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(18, 19, 19, 0.6);
+      color: rgb(0, 0, 0);
+   }
+   .date {
+      font-weight: 700;
+      font-size: 24px;
+      
+   }
+}
+
+.days,.hours,.minutes,.seconds{
+   border: 2px solid white;
+   border-radius:5px ;
+   color: #fff;
+}
+.days:hover,.hours:hover,.minutes:hover,.seconds:hover{
+   scale: 1.1;
+   color: red;
+}
+
+
+#form {
+   .icons span {
+      width: 40px;
+      border: 1px solid rgb(255, 255, 255);
+      margin: 0 10px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.5s;
+   }
+   .icons span:hover {
+      background-color: crimson;
+      color: white;
+   }
+}
